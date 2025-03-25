@@ -1,0 +1,294 @@
+:root {
+  --bg-light-gray: #c5c5c5;
+  --bg-chat: #e5ddd5;
+  --color-god-message: #b8e9ff;
+  --color-user-message: #dcf8c6;
+  --color-text-dark: #000;
+  --color-text-light: #666;
+  --color-border-light: rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Header Styles */
+.chat-header {
+  background-color: var(--bg-light-gray);
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px var(--color-border-light);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden; /* Add this to ensure the image stays within the circular boundary */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-info {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.header-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--color-text-dark);
+}
+
+.header-status {
+  font-size: 12px;
+  color: var(--color-text-light);
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+  color: #333;
+}
+
+.header-icons span {
+  font-size: 18px;
+}
+
+/* Message Container Styles */
+.message-container {
+  flex: 1;
+  padding: 15px 15px 0;
+  overflow-y: auto;
+  background-color: var(--bg-chat);
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23aaaaaa' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+  overscroll-behavior: contain;
+  overflow-anchor: auto;
+
+  /* Hide scrollbars across browsers */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.message-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Message Styles */
+.message-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.message-row-user {
+  justify-content: flex-end;
+}
+
+.message-row-god {
+  justify-content: flex-start;
+}
+
+.message {
+  max-width: 75%;
+  padding: 10px 12px;
+  border-radius: 15px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  position: relative;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: left;
+  animation: messageSlideUp 0.5s ease-out forwards;
+}
+
+.message-god {
+  background-color: var(--color-god-message);
+  color: var(--color-text-dark);
+  border-top-left-radius: 2px;
+  border: 2px solid #b1e6ff;
+}
+
+.message-user {
+  background-color: var(--color-user-message);
+  color: var(--color-text-dark);
+  border-top-right-radius: 2px;
+  border: 2px solid #d5fdb7;
+}
+
+/* Loading Dots Animation */
+.loading-dots {
+  display: flex;
+  padding: 10px 20px;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  width: fit-content;
+  align-self: flex-start;
+  margin: 8px 0;
+  animation: messageSlideUp 0.3s ease-out forwards;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #888;
+  margin: 0 2px;
+}
+
+/* Options Container */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px 8px 10px;
+  position: relative;
+  z-index: 10;
+  background-color: var(--bg-chat);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.option {
+  background-color: #fff;
+  color: var(--color-text-dark);
+  padding: 12px 15px;
+  border-radius: 18px;
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.option:hover {
+  background-color: #faffae;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Container */
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #ddd;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: #ffd700;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: var(--color-text-dark);
+  border: none;
+  cursor: pointer;
+}
+
+/* Creature Card Styles */
+.creature-card {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 350px;
+  animation: messageSlideUp 0.5s ease-out forwards;
+}
+
+.creature-image {
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.creature-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.creature-image:hover img {
+  transform: scale(1.05);
+}
+
+/* Fullscreen */
+.fullscreen-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+.fullscreen-image {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+/* Animations */
+@keyframes messageSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

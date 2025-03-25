@@ -1,0 +1,61 @@
+/* Fade in animation*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Message slide up animation */
+@keyframes messageSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pulse animation for typing dots */
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+}
+
+.animate-message {
+  animation: messageSlideUp 0.5s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Loading dots animations */
+.dot:nth-child(1) {
+  animation: pulse 1s infinite;
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation: pulse 1s infinite;
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation: pulse 1s infinite;
+  animation-delay: 0.4s;
+}

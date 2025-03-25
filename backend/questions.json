@@ -1,0 +1,362 @@
+[
+  {
+    "id": "intro",
+    "text": "Oh hey, you're awake! That's a relief. Thought I lost another soul to the void. 😅",
+    "options": [
+      {
+        "text": "Uh... who is this?",
+        "response": "A voice from beyond... guiding you into your next life. You’ve been chosen. It involves a truck, and a little magic. 🚛✨"
+      },
+      {
+        "text": "Am I dead??",
+        "response": "Bingo! You scored a one-way ticket via the ol’ Truck-kun express. 🚛💥 But don’t panic, think of it more like a transfer. You’ve been chosen for something greater. Let’s get you started!"
+      },
+      {
+        "text": "Is this a scam?",
+        "response": "HAHAHA! I love when they think it's a scam. No, this is very real. I'm your friendly neighborhood god. You just, uh... got isekai'd. 🚛💥"
+      }
+    ]
+  },
+  {
+    "id": "intro2",
+    "text": "BUT, good news, you get a fresh start in a new world! 🎉 Before I drop you in, let's figure out what kind of person you are. 🤔",
+    "options": [
+      {
+        "text": "Drop me in? What's going to happen?",
+        "response": "Oh, you'll see soon enough. 👀 But first, I need to understand what makes *you* tick. Let's begin!"
+      },
+      {
+        "text": "Wait! What do you mean by 'new world'?",
+        "response": "Exactly what it sounds like. New rules. New you. But don’t worry, we’ll ease you in. 😉"
+      },
+      {
+        "text": "Sounds exciting! What's next?",
+        "response": "That’s the spirit! 😎 Let’s find out what kind of soul we’re dealing with. Quiz time! "
+      },
+      {
+        "text": "Uh... do I have a choice?",
+        "response": "Not really. 😅 But hey, you *do* get to choose how you begin. Let's dive in."
+      }
+    ]
+  },
+  {
+    "id": "q1",
+    "text": "Alright, first thing's first, how do you feel about this whole reincarnation thing?",
+    "options": [
+      {
+        "text": "LET'S GOOOOO! I'm ready for adventure!",
+        "response": "THAT'S THE SPIRIT! Love your energy! Might just give you some bonus stats for that enthusiasm. 🔥",
+        "trait": "E"
+      },
+      {
+        "text": "Uhh, I’m not sure... Can I get a second to process all this?",
+        "response": "Oh, you're one of the thoughtful ones. Take your time... Well, not too much time. I have things to do. 🕰️",
+        "trait": "I"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "text": "You're about to get a new life. What's your approach?",
+    "options": [
+      {
+        "text": "Give me all the details! I need to start planning.",
+        "response": "A planner, eh? I respect that. Very responsible. 📝",
+        "trait": "J"
+      },
+      {
+        "text": "Eh, I'll figure things out as I go.",
+        "response": "Going with the flow! That's how I created platypuses. 😅 Just threw some parts together and BAM! 💥",
+        "trait": "P"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "text": "Okay, let's say I give you a magic sword. ⚔️ What's the first thing you do with it?",
+    "options": [
+      {
+        "text": "Study it carefully to understand its power.",
+        "response": "Ooh, cautious and methodical. Smart move. The last guy just started swinging and well... Let's just say he's going through reincarnation again. 💀",
+        "trait": "S"
+      },
+      {
+        "text": "Swing it around to see what happens!",
+        "response": "WOAH! *ducks* That sword shoots lightning! ⚡ Maybe warn me next time? Actually, I like your style, discovery through chaos!",
+        "trait": "N"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "text": "If I drop you into a town to start your adventure, what would you do? 🏘️",
+    "options": [
+      {
+        "text": "Talk to as many people as possible and make friends!",
+        "response": "A social butterfly, eh? 🦋 Ther should be some interesting NPCs in your path. Maybe a talking cat? Everyone loves those. 🐱",
+        "trait": "E"
+      },
+      {
+        "text": "Find a quiet place to observe and gather information.",
+        "response": "Ah, you're an observer. 🔎 Very wise. Theres should a medium-sized tavern that seems perfect for someone like you. 🍺",
+        "trait": "I"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "text": "Oh wait! Bad news, you wake up in a cave instead. 😱 What's your first move?",
+    "options": [
+      {
+        "text": "Look for a way out logically and carefully.",
+        "response": "Going with an analytical approach - nice! Maybe there are some clues lying around... like conveniently placed torches. 🔦",
+        "trait": "T"
+      },
+      {
+        "text": "Trust my instincts and start walking in a random direction.",
+        "response": "Following your guts! I love it. 😍 Sometimes divine intervention comes from within, you know? Hopefully your instincts lead somewhere interesting. 👍",
+        "trait": "F"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "text": "You make it outside. There's a road to a big city and a path to a peaceful village. 🛣️ Where are we dropping? ",
+    "options": [
+      {
+        "text": "Big city! More opportunities!",
+        "response": "To the city we go! 🏙️ The energy, the lights, the endless possibilities! Something tells me you’ll fit right in.",
+        "trait": "E"
+      },
+      {
+        "text": "Quiet village. I need time to settle in first.",
+        "response": "The simple life! Good choice. It'll be nice to stay in a cozy cottage near a lake. Very aesthetic. 🏡🌿",
+        "trait": "I"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "text": "You find a mysterious map. 🗺️ How do you approach it?",
+    "options": [
+      {
+        "text": "Examine every coordinates, landmarks, and patterns. There must be a specific route to follow.",
+        "response": "Now that’s dedication to the craft! Glad someone’s appreciating my cartographic skills. Most folks just use it as toilet paper. 🧻",
+        "trait": "S"
+      },
+      {
+        "text": "Look for hidden patterns or clues. Maybe the map points to something beyond what's drawn.",
+        "response": "Ah, reading between the lines... I see you're not just following a path, you're uncovering a *possibility*. 🕵️ Who knows what’s waiting off the edges of the page?",
+        "trait": "N"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "text": "Oh no! You wandered into a talking dragon. 🐲 What’s your strategy?",
+    "options": [
+      {
+        "text": "Negotiate! Maybe I can talk my way out of this.",
+        "response": "A diplomatic approach! Dragons are surprisingly receptive to good conversation. This one's named Catherine and she loves discussing philosophy. 🥖☕",
+        "trait": "F"
+      },
+      {
+        "text": "Observe the dragon and find a weakness.",
+        "response": "Analytical even in crisis! FYI, this dragon's weakness is getting compliments about her scales. 💅🐉 Just saying. Might be useful. 🤷",
+        "trait": "T"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "text": "You somehow survive the encounter. 😮 Now, a strange old wizard appears, muttering riddles and offering you an important quest. 🧙‍♂️ What do you do?",
+    "options": [
+      {
+        "text": "Ask for all the details and make a plan before accepting.",
+        "response": "You're smart. 🤓 This wizard is notorious for 'forgetting' to mention the giant spiders. 🕷️🕸️",
+        "trait": "J"
+      },
+      {
+        "text": "Take the quest first, figure things out later!",
+        "response": "I like your style, chaos always makes things more interesting. 🎲 Let’s see where it takes you!",
+        "trait": "P"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "text": "Okay, quick break. How are you feeling about all of this?",
+    "options": [
+      {
+        "text": "Excited! This is the best thing ever!",
+        "response": "WOOOO! That's what I like to hear! Your enthusiasm is giving me ideas for extra side quests. Maybe a dance competition? 🕺",
+        "trait": "E"
+      },
+      {
+        "text": "Overwhelmed, but I'm adapting.",
+        "response": "Taking it all in stride! I respect that. Death and reincarnation is a lot to process. 🫠 I'll make sure your early quests are manageable.",
+        "trait": "I"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "text": "New problem: A mysterious prophecy may or may not be about you. 🧐 What do you think?",
+    "options": [
+      {
+        "text": "I need solid proof before I believe it.",
+        "response": "Fair enough. Legends have a way of getting dramatic. Let’s see some actual signs before jumping to conclusions. 🧾",
+        "trait": "S"
+      },
+      {
+        "text": "Sounds cool, let's embrace it!",
+        "response": "Embracing destiny! I love it. ✨ The prophecy is actually something I wrote after a wild night of drinking, but don't tell anyone. 🍷🤫 Let's see where it goes!",
+        "trait": "N"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "text": "Oh, you found a magical artifact! 📕 What do you do?",
+    "options": [
+      {
+        "text": "Test it out immediately!",
+        "response": "*Watches nervously* Oh good, it didn't explode this time. 😮‍💨 That artifact turns socks into butterflies. Useless but pretty! 🦋✨",
+        "trait": "F"
+      },
+      {
+        "text": "I'll examine it closely. If it checks out, I’ll consider using it.",
+        "response": "Smart move! Not all that glitters is good... but sometimes it *is* very powerful. 💫 Just don’t poke the glowing parts too hard.",
+        "trait": "T"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "text": "Whoops! A thief just stole your wallet. 💸 How do you react?",
+    "options": [
+      {
+        "text": "Chase them down and demand justice!",
+        "response": "A justice seeker! I respect that. 🫡 Okay but... what if the thief dramatically slipped on a banana peel right after? 🍌 Just imagine the style points. 🤣",
+        "trait": "J"
+      },
+      {
+        "text": "Meh, it's just money. I'll figure it out.",
+        "response": "Going with the flow! Don't worry, I'm sure you'll find bags of gold in the next dungeon. 💰 The universe balances itself out. 🌏",
+        "trait": "P"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "text": "Surprise twist! The thief is actually a prince in disguise. 🤴 How do you handle this?",
+    "options": [
+      {
+        "text": "Try to understand his reasons and offer to help.",
+        "response": "Your empathy pays off! Turns out the prince is undercover, searching for loyal allies. You just made the VIP list. 👑",
+        "trait": "F"
+      },
+      {
+        "text": "Stick to logic—stealing is wrong!",
+        "response": "Ah, sticking to the moral code. Even undercover royalty shouldn’t be breaking laws. 👨‍⚖️",
+        "trait": "T"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "text": "A kingdom is at war. You have to pick a side. How do you decide?",
+    "options": [
+      {
+        "text": "Strategically analyze which side has the best chance of winning.",
+        "response": "Tactical thinker, huh? 🧠 War isn't just about bravery, it's about brains. Let's stack the odds in your favor. ⚔️",
+        "trait": "T"
+      },
+      {
+        "text": "Choose the side I feel is morally right, even if risky.",
+        "response": "It’s not easy standing up for what you believe in, especially when the odds are stacked. Don’t worry, you won’t be alone. 🧙🧝🥷",
+        "trait": "F"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "text": "You get one magical power. 💫 What's your pick?",
+    "options": [
+      {
+        "text": "The ability to plan and execute anything flawlessly.",
+        "response": "Oho, a planner! I can see your gears turning already. Alright, I’ll toss in a few twists, lets test out your perfect planning skills. 🤡",
+        "trait": "J"
+      },
+      {
+        "text": "The ability to adapt and react perfectly to any situation.",
+        "response": "Ah, that kind of flexibility will serve you well—especially in the beautifully unpredictable, chaotic world you're about to enter. 🌪️😄",
+        "trait": "P"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "text": "Oh look! There's a festival in town. 🎆 The whole kingdom is celebrating. What's your approach?",
+    "options": [
+      {
+        "text": "Get right into the middle of things! Join every competition and dance!",
+        "response": "A party animal! 🎉 Sounds like you’ll fit right in, maybe there would be a dance-off with the royal family. Gotta make your entrance memorable! 💃",
+        "trait": "E"
+      },
+      {
+        "text": "Find a nice spot to enjoy the atmosphere without too much commotion.",
+        "response": "Ah, enjoying it from a comfortable distance - just like me! A perfect view of the square and a warm cup of tea? Now that’s a real luxury. 🍵",
+        "trait": "I"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "text": "You decided to move on, walking through a forest where the trees whisper secrets. 🌲 What do you pay attention to?",
+    "options": [
+      {
+        "text": "The sounds and signs around me - footprints, changes in the air, anything I can see or hear.",
+        "response": "Grounded and observant, you notice the details most would miss. That kind of sharp focus tends to uncover things others walk right past. 🍃",
+        "trait": "S"
+      },
+      {
+        "text": "The meaning behind the whispers, maybe they’re hinting at something deeper.",
+        "response": "Ooh, a seeker of hidden truths! Symbols, riddles, mysteries! You’ve got the instinct to notice what others overlook. Let’s see what secrets you uncover. 🗝️",
+        "trait": "N"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "text": "You need to cross a dangerous mountain range. 🏔️ What's your approach?",
+    "options": [
+      {
+        "text": "Get a detailed map, proper equipment, and follow established trails.",
+        "response": "No shame in playing it safe. I hope your gear doesn’t mysteriously fall apart halfway through. 🫢",
+        "trait": "S"
+      },
+      {
+        "text": "Search for a shortcut that no one else has discovered!",
+        "response": "I see that you're chasing the hidden path. There are legends about ancient teleportation circles. Who’s to say you won’t stumble across one? 🌀",
+        "trait": "N"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "text": "Okay, final question. Your story is about to be passed down through generations. What kind of legacy do you leave behind? 🌟",
+    "options": [
+      {
+        "text": "A legacy built on thoughtful choices, structure, and long-term impact.",
+        "response": "Ah, the kind of legacy that shapes kingdoms and ideas alike. 🏰 Your story becomes a guide for those who seek order in a chaotic world. 📖",
+        "trait": "J"
+      },
+      {
+        "text": "A legacy full of bold actions, passion, and unforgettable moments.",
+        "response": "Your tale becomes the stuff of fireside stories - full of twists, risks, and heart. 🔥 It’s not always planned, but it’s always remembered. 😊",
+        "trait": "P"
+      }
+    ]
+  }
+]

@@ -1,0 +1,123 @@
+:root {
+  --phone-bg-dark: #111;
+  --phone-border-dark: #444;
+  --phone-status-bg: #fff;
+  --phone-status-text: #000;
+
+  --phone-border-radius: 35px;
+  --phone-max-width: 370px;
+  --phone-min-height: 600px;
+  --phone-max-height: min(800px, 80vh);
+  --phone-aspect-ratio: 0.48;
+  --phone-notch-height: 30px;
+  --phone-status-height: 30px;
+
+  --phone-shadow-primary: 0 10px 25px rgba(0, 0, 0, 0.5);
+  --phone-shadow-secondary: 0 6px 10px rgba(0, 0, 0, 0.4);
+
+  --transition-smooth: all 0.3s ease-in-out;
+}
+
+/* Phone Container - Main Wrapper */
+.phone-container {
+  width: calc(100vw - 40px);
+  max-width: var(--phone-max-width);
+  height: auto;
+  min-height: var(--phone-min-height);
+  max-height: var(--phone-max-height);
+  aspect-ratio: var(--phone-aspect-ratio);
+
+  margin: 0 auto;
+  font-family: "Arial", "Helvetica", sans-serif;
+
+  border-radius: var(--phone-border-radius);
+  overflow: hidden;
+
+  box-shadow: var(--phone-shadow-primary), var(--phone-shadow-secondary);
+
+  position: relative;
+  background-color: var(--phone-bg-dark);
+
+  border: 12px solid var(--phone-bg-dark);
+  outline: 2px solid var(--phone-border-dark);
+
+  display: flex;
+  flex-direction: column;
+
+  transition: var(--transition-smooth);
+}
+
+/* Phone Notch */
+.phone-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: min(150px, 40%);
+  height: var(--phone-notch-height);
+
+  background-color: var(--phone-bg-dark);
+  border-bottom-left-radius: calc(var(--phone-notch-height) / 2);
+  border-bottom-right-radius: calc(var(--phone-notch-height) / 2);
+
+  z-index: 10;
+}
+
+/* Status Bar */
+.status-bar {
+  background-color: var(--phone-status-bg);
+  height: var(--phone-status-height);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 15px;
+  font-size: 0.75rem;
+  color: var(--phone-status-text);
+
+  border-top-left-radius: calc(var(--phone-status-height) / 1.5);
+  border-top-right-radius: calc(var(--phone-status-height) / 1.5);
+}
+
+/* Status Bar Sections */
+.status-bar-left,
+.status-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Time */
+.time {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Icons */
+.signal {
+  margin-right: 5px;
+}
+
+.battery {
+  margin-left: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 400px) {
+  .phone-container {
+    width: calc(100vw - 20px);
+    border-radius: 25px;
+  }
+
+  .phone-notch {
+    width: min(120px, 35%);
+    height: 25px;
+  }
+
+  .status-bar {
+    height: 25px;
+    font-size: 0.6875rem;
+    padding: 0 10px;
+  }
+}
