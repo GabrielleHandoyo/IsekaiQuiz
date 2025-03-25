@@ -19,7 +19,10 @@ app.secret_key = "reincarnation_quiz_secret"  # Secret key for session managemen
 # Configure CORS to allow cross-origin requests from any source
 # Allows communication between frontend and backend
 CORS(app, resources={r"/*": {
-    "origins": "*",
+    "origins": [
+        "https://isekaiquiz.netlify.app", 
+        "https://isekaiquiz.com"
+    ],
     "methods": ["GET", "POST", "OPTIONS"],
     "allow_headers": "*"
 }})
