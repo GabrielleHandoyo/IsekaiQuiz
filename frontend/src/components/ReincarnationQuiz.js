@@ -732,7 +732,7 @@ const ReincarnationQuiz = () => {
           />
         </div>
         <div className="header-info">
-          <div className="header-name">Reincarnation Quiz</div>
+          <div className="header-name">Unknown Number</div>
           <div className="header-status">Online now</div>
         </div>
         <div className="header-icons">
