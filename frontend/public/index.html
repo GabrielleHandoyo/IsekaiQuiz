@@ -2,30 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/quizlogo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Basic favicon -->
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/apple-touch-icon.png"
+    />
+
+    <!-- Favicon PNGs -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="%PUBLIC_URL%/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="%PUBLIC_URL%/favicon-16x16.png"
+    />
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#000000" />
+
+    <!-- Theme Color for Browser UI -->
     <meta name="theme-color" content="#000000" />
+
+    <!-- SEO and Social Sharing Meta Tags -->
     <meta
       name="description"
-      content="Take our Reincarnation Quiz to discover what  you'll be reborn as in a fantasy world!"
+      content="Ever wondered who you'd be in a fantasy world? Discover your reincarnated form by taking this quiz!"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/quizlogo.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta property="og:title" content="Isekai Quiz" />
+    <meta
+      property="og:description"
+      content="Ever wondered who you'd be in a fantasy world? Discover your reincarnated form by taking this quiz!"
+    />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    <meta property="og:url" content="https://isekaiquiz.com" />
+    <meta property="og:type" content="website" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>Isekai Quiz</title>
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
