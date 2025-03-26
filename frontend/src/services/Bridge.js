@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://https://isekaiquizapi.onrender.com:5000/api";
+const API_URL = "https://gabriellehandoyo.pythonanywhere.com/api";
 
 const quizService = {
   startQuiz: async () => {
