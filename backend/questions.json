@@ -109,7 +109,7 @@
     "options": [
       {
         "text": "Look for a way out logically and carefully.",
-        "response": "Going with an analytical approach - nice! Maybe there are some clues lying around... like conveniently placed torches. 🔦",
+        "response": "Going with an analytical approach - nice! Maybe there are some clues lying around... like some conveniently placed torches. 🔦",
         "trait": "T"
       },
       {
@@ -121,7 +121,7 @@
   },
   {
     "id": "q6",
-    "text": "You make it outside. There's a road to a big city and a path to a peaceful village. 🛣️ Where are we dropping? ",
+    "text": "You make it outside. There's a road to a big city and a path to a peaceful village. 🛣️ Where are we going? ",
     "options": [
       {
         "text": "Big city! More opportunities!",
@@ -265,7 +265,7 @@
   },
   {
     "id": "q15",
-    "text": "A kingdom is at war. You have to pick a side. How do you decide?",
+    "text": "You’ve ended up caught between two kingdoms at war. You have to pick a side. How do you choose who to fight for?",
     "options": [
       {
         "text": "Strategically analyze which side has the best chance of winning.",
@@ -281,7 +281,7 @@
   },
   {
     "id": "q16",
-    "text": "You get one magical power. 💫 What's your pick?",
+    "text": "You get one magical power to aid you in your battles. 💫 What's your pick?",
     "options": [
       {
         "text": "The ability to plan and execute anything flawlessly.",
