@@ -247,8 +247,8 @@ const ReincarnationQuiz = () => {
   // Next question function
   const handleNextQuestion = (currentMessages, nextQuestion) => {
     // Delay const
-    const RESPONSE_TO_QUESTION_DELAY = 2500;
-    const NEXT_QUESTION_TYPING = 3500;
+    const RESPONSE_TO_QUESTION_DELAY = 1000;
+    const NEXT_QUESTION_TYPING = 1500;
     const OPTIONS_DELAY = 2000;
 
     setTimeout(() => {
