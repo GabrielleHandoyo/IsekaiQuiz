@@ -222,12 +222,12 @@
 }
 
 .star {
-  font-size: 24px;
-  color: #ddd;
+  font-size: 35px;
+  color: #b1b1b1;
 }
 
 .star.filled {
-  color: #ffd700;
+  color: #ffd900;
 }
 
 /* Rating Distribution */

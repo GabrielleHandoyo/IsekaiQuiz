@@ -1,8 +1,8 @@
 :root {
   --primary-bg-color: #b8e9ff;
   --border-color: #b1e6ff;
-  --star-default-color: #ccc;
-  --star-selected-color: #ffd700;
+  --star-default-color: #b1b1b1;
+  --star-selected-color: #ffd900;
   --button-bg-color: #4caf50;
   --button-hover-color: #45a049;
   --text-color: #000;
